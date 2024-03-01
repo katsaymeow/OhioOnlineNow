@@ -1,0 +1,453 @@
+body {
+    font-family: Lato;
+    margin: 0;
+  }
+  
+  h1 {
+    padding: 8px;
+    background: rgb(1, 1, 75);
+    color: rgb(255, 197, 142);
+    border-radius: 8px;
+    margin: 0;
+    font-size: 64px;
+    font-family: "Lato";
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  main {
+    margin: 0 auto;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Inputs */
+  
+  input,
+  textarea {
+    height: 32px;
+    padding: 0 16px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    border: none;
+    box-shadow: inset 8px 3px 10px -4px rgba(0 0 0 0.4);
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+  }
+  
+  /* Banner */
+  
+  #banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* the sticky */
+    background: rgb(255, 197, 142) url("img/smallmushroom.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    /* the sticky */
+    color: rgb(1, 1, 75);
+  }
+  
+  #banner h4 {
+    background: none;
+    border-radius: 8px;
+    padding: 0 24px;
+    font-size: 24px;
+  }
+  
+  /* Search box - issues to reslove */
+  
+  #search-box {
+    position: fixed;
+    /* is it behind the banner? being fixed */
+    right: 0;
+    top: 24px;
+    width: 500px;
+    pointer-events: none;
+    z-index: 50;
+    transition: 0.4s;
+  }
+  
+  #search-box input {
+    height: 40px;
+    width: 100%;
+  }
+  
+  /* Nav */
+  
+  nav {
+    height: 72px;
+    background: rgb(1, 1, 75);
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    font-family: "Lato";
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+  }
+  
+  nav a {
+    padding: 0 32px;
+    color: rgb(198, 228, 255);
+    transition: 0.4s;
+  }
+  
+  nav a:hover {
+    text-decoration: none;
+    color: rgb(255, 197, 142);
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+  }
+  
+  .active {
+      color: rgb(190, 9, 106);
+  }
+  
+  /* logo looked really wrong may try again  */
+  /* #logo-img {
+    display: flex;
+    height: 100%;
+    background: none;
+    padding: 0;
+    align-items: center;
+    color: rgb(198, 228, 255);
+    transition: 0.4s;
+  } */
+  
+  /* #logo-img img {
+    height: 100px;
+  } */
+  
+  /* #logo-img:hover {
+    background-color: black;
+  } */
+  
+  #menu-icon {
+    height: 100%;
+    font-size: 28px;
+    padding: 0 4px;
+    color: rgb(198, 228, 255);
+    display: none;
+    align-items: center;
+  }
+  
+  /* Search Icon - these styles are applying should try here*/
+  
+  #search-icon {
+    color: white;
+    padding: 0 32 px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  #search-icon:hover {
+    color: rgb(190, 9, 106);
+  }
+  
+  /* Slideout Menu */
+  
+  #slideout-menu {
+    display: none;
+    background: rgb(255, 197, 142);
+    z-index: 100;
+    position: fixed;
+    transition: 0.4s;
+    margin-top: 72px;
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+    pointer-events: none;
+  }
+  
+  #slideout-menu ul {
+    list-style: none;
+    padding: 0 32px;
+  }
+  
+  #slideout-menu ul li {
+    padding: 8px;
+  }
+  
+  #slideout-menu a {
+    font-family: "Lato";
+    font-size: 20px;
+    color: white;
+  }
+  
+  #slideout-menu input {
+    width: 85%;
+    padding: 8px;
+    font-family: "Lato";
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  /* Sections */
+  
+  section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  #section-heading {
+    font-size: 32px;
+    font-family: "Lato";
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    transition: all 0.4s;
+    display: inline-block;
+    padding: 4px 32px;
+  }
+  
+  #section-heading:hover {
+    padding: 4px 48px;
+    background: rgb(1, 1, 75);
+    color: rgb(255, 197, 142);
+  }
+  
+  /* Section Code */
+  
+  #section-code p {
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #section-code a {
+    margin: 8px;
+    text-align: center;
+  }
+  
+  /* Card */
+  
+  /* cards not stacking, look at sooner than later */
+  
+  /* .card {
+      display: flex;
+      max-width: 300px;
+      max-height: 300px;
+  } */
+  
+  .card-image {
+    transition: 0.4s;
+    /* max-height: 200px; */
+  }
+  
+  .card-image:hover {
+    box-shadow: 0 10px 6px -6px #777;
+  }
+  
+  .card .card-description {
+    padding: 0 8px;
+  }
+  
+  /* Button read more */
+  
+  .btn-readmore {
+    padding: 8px 24px;
+    border: 3px solid black;
+    transition: 0.4s;
+    display: inline-block;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #eee;
+  }
+  
+  .btn-readmore:hover {
+    background: rgb(1, 1, 75);
+    text-decoration: none;
+    padding: 8px 64px 8px 24px;
+    color: rgb(255, 197, 142);
+  }
+  
+  /* Footer */
+  
+  footer {
+    background-color: rgb(255, 197, 142);
+    padding: 8px;
+    color: rgb(1, 1, 75);
+    display: flex;
+  }
+  
+  footer a {
+    color: rgb(1, 1, 75);
+  }
+  
+  footer #left-footer {
+    flex: 1;
+    border-right: 1px solid rgb(1, 1, 75);
+    padding-left: 32px;
+  }
+  
+  footer #left-footer ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.5;
+  }
+  
+  footer #right-footer {
+    flex: 2;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  footer #social-media-footer a .fa-facebook,
+  footer #social-media-footer a .fa-github,
+  footer #social-media-footer a .fa-youtube {
+    color: white;
+    transition: 0.4s;
+  }
+  
+  footer #social-media-footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  footer #social-media-footer ul li {
+    font-size: 48px;
+    padding: 16px;
+    transition: 0.4s;
+  }
+  
+  footer #social-media-footer ul li:hover a .fa-youtube {
+    color: red;
+  }
+  
+  footer #social-media-footer ul li:hover a .fa-github {
+    color: #bbb;
+  }
+  
+  footer #social-media-footer ul li:hover a .fa-facebook {
+    color: #3b5998;
+  }
+  
+  /* Media Queries */
+  
+  @media (min-width: 720px) {
+    main {
+      width: 95%;
+    }
+    .card {
+      width: 45%;
+    }
+    .card .card-image img {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    main {
+      width: 85%;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    nav ul {
+      display: none;
+    }
+  
+    #menu-icon {
+      display: flex;
+    }
+  
+    #slideout-menu {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    main {
+      width: 95%;
+    }
+  
+    section {
+      flex-direction: column;
+    }
+  
+    .card,
+    .card .card-image img {
+      width: 100%;
+    }
+  
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    footer #left-footer {
+      flex: 1;
+      border-right: 0;
+      padding-left: 0;
+    }
+  
+    footer #right-footer {
+      background: #eee;
+      color: rgb(1, 1, 75);
+    }
+  
+    footer #right-footer a {
+      color: rgb(1, 1, 75);
+    }
+  
+    footer #social-media-footer a .fa-facebook,
+    footer #social-media-footer a .fa-github,
+    footer #social-media-footer a .fa-youtube {
+      color: rgb(1, 1, 75);
+      transition: 0.4s;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    main {
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 48px;
+    }
+  
+    #banner h3 {
+      font-size: 20px;
+    }
+  
+    .card {
+      text-align: center;
+    }
+  
+    #logo-img {
+      padding: 0;
+    }
+  }
+  
